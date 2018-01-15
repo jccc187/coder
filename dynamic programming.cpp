@@ -24,7 +24,7 @@ struct dafa result[3925][601];
 void dr()
 {
 	fstream f1;
-	f1.open("F:\\Ë®µçÕ¾µ÷¶È\\Èë¿âÁ÷Á¿.txt");
+	f1.open("F:\\æ°´ç”µç«™è°ƒåº¦\\å…¥åº“æµé‡.txt");
 	for (int i = 0; i < 3924; i++)
 	{
 		f1 >> Q[i];
@@ -32,56 +32,56 @@ void dr()
 	}
 	f1.close();
 	fstream f2;
-	f2.open("F:\\Ë®µçÕ¾µ÷¶È\\¿âÈİÇúÏß.txt");
+	f2.open("F:\\æ°´ç”µç«™è°ƒåº¦\\åº“å®¹æ›²çº¿.txt");
 	for (int i = 0; i < 56; i++)
 	{
 		f2 >> a[i] >> b[i];
 	}
 	f2.close();
 	fstream f3;
-	f3.open("F:\\Ë®µçÕ¾µ÷¶È\\³öÁ¦ÏµÊı.txt");
+	f3.open("F:\\æ°´ç”µç«™è°ƒåº¦\\å‡ºåŠ›ç³»æ•°.txt");
 	for (int i = 0; i < 6; i++)
 	{
 		f3 >> a1[i] >> b1[i];
 	}
 	f3.close();
 	fstream f4;
-	f4.open("F:\\Ë®µçÕ¾µ÷¶È\\ËğÊ§.txt");
+	f4.open("F:\\æ°´ç”µç«™è°ƒåº¦\\æŸå¤±.txt");
 	for (int i = 0; i < 15; i++)
 	{
 		f4 >> a2[i] >> b2[i];
 	}
 	f4.close();
 	fstream f5;
-	f5.open("F:\\Ë®µçÕ¾µ÷¶È\\ÏÂÓÎË®Î».txt");
+	f5.open("F:\\æ°´ç”µç«™è°ƒåº¦\\ä¸‹æ¸¸æ°´ä½.txt");
 	for (int i = 0; i < 30; i++)
 	{
 		f5 >> a3[i] >> b3[i];
 	}
 	f5.close();
 	fstream f6;
-	f6.open("F:\\Ë®µçÕ¾µ÷¶È\\Ğ¹Á÷ÄÜÁ¦.txt");
+	f6.open("F:\\æ°´ç”µç«™è°ƒåº¦\\æ³„æµèƒ½åŠ›.txt");
 	for (int i = 0; i < 12; i++)
 	{
 		f6 >> a4[i] >> b4[i];
 	}
 	f6.close();
 	fstream f7;
-	f7.open("F:\\Ë®µçÕ¾µ÷¶È\\×î´ó³öÁ¦.txt");
+	f7.open("F:\\æ°´ç”µç«™è°ƒåº¦\\æœ€å¤§å‡ºåŠ›.txt");
 	for (int i = 0; i < 18; i++)
 	{
 		f7 >> a5[i] >> b5[i];
 	}
 	f7.close();
 	fstream f8;
-	f8.open("F:\\Ë®µçÕ¾µ÷¶È\\³ö¿âÁ÷Á¿.txt");
+	f8.open("F:\\æ°´ç”µç«™è°ƒåº¦\\å‡ºåº“æµé‡.txt");
 	for (int i = 0; i < 3924; i++)
 	{
 		f8 >> q1[i] ;
 	}
 	f8.close();
 	fstream f9;
-	f9.open("F:\\Ë®µçÕ¾µ÷¶È\\Ë®Î».txt");
+	f9.open("F:\\æ°´ç”µç«™è°ƒåº¦\\æ°´ä½.txt");
 	for (int i = 0; i < 3924; i++)
 	{
 		f9 >> h1[i];
@@ -125,7 +125,7 @@ void njs(int m)
 		}
 		e2[i % 36] = p2[i % 36] * 3600 * 24 * 10;
 	}
-	ofstream f2("F:\\Ë®µçÕ¾µ÷¶È\\½á¹û.txt", ios::trunc);
+	ofstream f2("F:\\æ°´ç”µç«™è°ƒåº¦\\ç»“æœ.txt", ios::trunc);
 	for (int i = 0; i < 36; i++)
 	{
 		f2 << h1[m * 36 + i] << "," << Q[m * 36 + i] << "," << q1[m * 36 + i] << "," << fd2[i] << "," << qs2[i] << "," << p2[i] << "," << e2[i] << "," << hsl[i] << endl;
@@ -133,7 +133,7 @@ void njs(int m)
 }
 void ckll()
 {
-	ofstream f3("F:\\Ë®µçÕ¾µ÷¶È\\³ö¿âÁ÷Á¿.txt", ios::trunc);
+	ofstream f3("F:\\æ°´ç”µç«™è°ƒåº¦\\å‡ºåº“æµé‡.txt", ios::trunc);
 	for (int i = 1; i <= 3924; i++)
 		ck[3924 - i] = (Q[3924 - i] * 3600 * 24 * 10 - (chazhi(sw[i]) - chazhi(sw[i+1])) * 100000000) / (3600 * 24 * 10);
 	for (int i = 0; i < 3924; i++)
@@ -141,7 +141,7 @@ void ckll()
 }
 void sc(double m)
 {
-	ofstream f2("F:\\Ë®µçÕ¾µ÷¶È\\Ë®Î».txt", ios::trunc);
+	ofstream f2("F:\\æ°´ç”µç«™è°ƒåº¦\\æ°´ä½.txt", ios::trunc);
 	int n;
 	double q;
 	f2 << m << endl;
@@ -158,7 +158,7 @@ void dtgh(double m)
 {
 	for (int j = 0; j < 3924; j++)
 	{
-		if (j % 36 == 0)//Äê³õ
+		if (j % 36 == 0)//å¹´åˆ
 		{
 			for (int i = 0; i <= 600; i++)
 			{
@@ -193,7 +193,7 @@ void dtgh(double m)
 				}
 			}
 		}
-		else if (j % 36 == 15)//Ñ´ÆÚ³õ
+		else if (j % 36 == 15)//æ±›æœŸåˆ
 		{
 			for (int i = 0; i <= 600; i++)
 			{
@@ -228,7 +228,7 @@ void dtgh(double m)
 				}
 			}
 		}
-		else if (j % 36 >= 16 && j % 36 <= 24)//Ñ´ÆÚ
+		else if (j % 36 >= 16 && j % 36 <= 24)//æ±›æœŸ
 		{
 			for (int i = 0; i <= 600; i++)
 			{
@@ -263,7 +263,7 @@ void dtgh(double m)
 				}
 			}
 		}
-		else if (j % 36 == 25)//Ñ´ÆÚÄ©
+		else if (j % 36 == 25)//æ±›æœŸæœ«
 		{
 			for (int i = 0; i <= 600; i++)
 			{
@@ -298,7 +298,7 @@ void dtgh(double m)
 				}
 			}
 		}
-		else if (j % 36 == 35)//ÄêÄ©
+		else if (j % 36 == 35)//å¹´æœ«
 		{
 			for (int i = 0; i <= 600; i++)
 			{
@@ -333,7 +333,7 @@ void dtgh(double m)
 				}
 			}
 		}
-		else//Õı³£Ê±ÆÚ
+		else//æ­£å¸¸æ—¶æœŸ
 		{
 			for (int i = 0; i <= 600; i++)
 			{
@@ -372,7 +372,7 @@ void dtgh(double m)
 	int p = (int)((m - 145) * 20);
 	cout << result[3923][p].max << endl;
 }
-double chazhi(double x)//¿âÈİÇúÏß
+double chazhi(double x)//åº“å®¹æ›²çº¿
 {
 	double y;
 	if (x<a[0])
@@ -389,7 +389,7 @@ double chazhi(double x)//¿âÈİÇúÏß
 	}
 	return y;
 }//
-double chazhi2(double x)//³öÁ¦ÏµÊı
+double chazhi2(double x)//å‡ºåŠ›ç³»æ•°
 {
 	double y;
 	if (x<a1[0])
@@ -406,7 +406,7 @@ double chazhi2(double x)//³öÁ¦ÏµÊı
 	}
 	return y;
 }
-double chazhi3(double x)//Ë®Í·ËğÊ§
+double chazhi3(double x)//æ°´å¤´æŸå¤±
 {
 	double y;	
 	if (x<a2[0])
@@ -423,7 +423,7 @@ double chazhi3(double x)//Ë®Í·ËğÊ§
 	}
 	return y;
 }
-double chazhi4(double x)//ÏÂÓÎË®Î»
+double chazhi4(double x)//ä¸‹æ¸¸æ°´ä½
 {
 	double y;
 	if (x<a3[0])
@@ -439,7 +439,7 @@ double chazhi4(double x)//ÏÂÓÎË®Î»
 	}
 	return y;
 }
-double chazhi5(double x)//Ğ¹Á÷ÄÜÁ¦
+double chazhi5(double x)//æ³„æµèƒ½åŠ›
 {
 	double y;
 	if (x<a4[0])
@@ -456,7 +456,7 @@ double chazhi5(double x)//Ğ¹Á÷ÄÜÁ¦
 	}
 	return y;
 }
-double chazhi6(double x)//×î´ó³öÁ¦
+double chazhi6(double x)//æœ€å¤§å‡ºåŠ›
 {
 	double y;
 	if (x<a5[0])
